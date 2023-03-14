@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="css/footers.css">
     <link rel="stylesheet" href="css/pagination.css">
     <link rel="stylesheet" href="css/search.css">
+    <link rel="stylesheet" href="css/reserve.css">
     <link rel="stylesheet" href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" />
     <script defer src="https://unpkg.com/alpinejs@3.9.1/dist/cdn.min.js"></script>
     <script src="https://kit.fontawesome.com/1171a84c58.js" crossorigin="anonymous"></script>
@@ -58,7 +59,7 @@
                     <form class='search-form'>
                     <input class='form-control' placeholder='ex: livre, roman, DVD, mémoire de recherche, magazine, etc.' type='text'>
                     <button class='btn btn-link search-btn'>
-                        <i class='glyphicon glyphicon-search'></i>
+                        <i class="fa-solid fa-magnifying-glass"></i>
                     </button>
                     </form>
                 </div>
@@ -79,15 +80,25 @@
                 <P>type  : livre</P>
                 <P>nombre de pages : 220 pages</P>
             </div>
-            <div class="btn">
-                <button class="buy-btn">Reserve Now</button>
-                <button class="fav">
-                    <svg class="svg" id="i-star" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" stroke="#000"
-                        stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-                        <path d="M16 2 L20 12 30 12 22 19 25 30 16 23 7 30 10 19 2 12 12 12 Z" />
-                    </svg>
-                </button>
-            </div>
+                <input type="checkbox" name="dialog_state" id="dialog_state" class="dialog_state">
+                <div id='dialog'>
+                <label id="dlg-back" for="dialog_state"></label>
+                <div id='dlg-wrap'>
+                    <label id="dlg-close" for="dialog_state"><i class="fa-sharp fa-solid fa-circle-xmark"></i></label>
+                    <h2 id='dlg-header'>Are you sure?</h2>
+                    <div id='dlg-content'>you've got 24 hours to pick up your item</div>
+                    <div id='dlg-prompt'>
+                    <div class='button positive'><i class="icon ion-ios-checkmark-empty"></i> Yes, let's do it!</div>
+                    <div class='button'><i class="icon ion-ios-close-empty"></i> No, I'll reconsider</div>
+                    </div>
+                </div>
+                </div>
+                <main id='main' class='main_area'>
+                <div class='center'>
+                    <label class="button mt-4" for="dialog_state"><i class="icon ion-ios-upload-outline
+                    "></i> Reserve Now</label>
+                </div>
+                <div id='console'></div>
         </section>
 
         <section class="card ">
@@ -102,15 +113,26 @@
                 <P>type  : livre</P>
                 <P>nombre de pages : 220 pages</P>
             </div>
-            <div class="btn">
-                <button class="buy-btn">Reserve Now</button>
-                <button class="fav">
-                    <svg class="svg" id="i-star" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" stroke="#000"
-                        stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-                        <path d="M16 2 L20 12 30 12 22 19 25 30 16 23 7 30 10 19 2 12 12 12 Z" />
-                    </svg>
-                </button>
-            </div>
+                <input type="checkbox" name="dialog_state" id="dialog_state" class="dialog_state">
+                <div id='dialog'>
+                <label id="dlg-back" for="dialog_state"></label>
+                <div id='dlg-wrap'>
+                    <label id="dlg-close" for="dialog_state"><i class="fa-sharp fa-solid fa-circle-xmark"></i></label>
+                    <h2 id='dlg-header'>Are you sure?</h2>
+                    <div id='dlg-content'>222222222222222222222</div>
+                    <div id='dlg-prompt'>
+                    <div class='button positive'><i class="icon ion-ios-checkmark-empty"></i> Yes, let's do it!</div>
+                    <div class='button'><i class="icon ion-ios-close-empty"></i> No, I'll reconsider</div>
+                    </div>
+                </div>
+                </div>
+                <main id='main' class='main_area'>
+                <div class='center'>
+                    <label class="button mt-4" for="dialog_state"><i class="icon ion-ios-upload-outline
+                    "></i> Reserve Now</label>
+                </div>
+                <div id='console'></div>
+    
         </section>
 
         <section class="card ">
@@ -125,15 +147,26 @@
                 <P>type  : livre</P>
                 <P>nombre de pages : 220 pages</P>
             </div>
-            <div class="btn">
-                <button class="buy-btn">Reserve Now</button>
-                <button class="fav">
-                    <svg class="svg" id="i-star" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" stroke="#000"
-                        stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-                        <path d="M16 2 L20 12 30 12 22 19 25 30 16 23 7 30 10 19 2 12 12 12 Z" />
-                    </svg>
-                </button>
-            </div>
+                <input type="checkbox" name="dialog_state" id="dialog_state" class="dialog_state">
+                <div id='dialog'>
+                <label id="dlg-back" for="dialog_state"></label>
+                <div id='dlg-wrap'>
+                    <label id="dlg-close" for="dialog_state"><i class="fa-sharp fa-solid fa-circle-xmark"></i></label>
+                    <h2 id='dlg-header'>Are you sure?</h2>
+                    <div id='dlg-content'>33333333333333333333333333</div>
+                    <div id='dlg-prompt'>
+                    <div class='button positive'><i class="icon ion-ios-checkmark-empty"></i> Yes, let's do it!</div>
+                    <div class='button'><i class="icon ion-ios-close-empty"></i> No, I'll reconsider</div>
+                    </div>
+                </div>
+                </div>
+                <main id='main' class='main_area'>
+                <div class='center'>
+                    <label class="button mt-4" for="dialog_state"><i class="icon ion-ios-upload-outline
+                    "></i> Reserve Now</label>
+                </div>
+                <div id='console'></div>
+    
         </section>
 
         <section class="card ">
@@ -148,15 +181,26 @@
                 <P>type  : livre</P>
                 <P>nombre de pages : 220 pages</P>
             </div>
-            <div class="btn">
-                <button class="buy-btn">Reserve Now</button>
-                <button class="fav">
-                    <svg class="svg" id="i-star" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" stroke="#000"
-                        stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-                        <path d="M16 2 L20 12 30 12 22 19 25 30 16 23 7 30 10 19 2 12 12 12 Z" />
-                    </svg>
-                </button>
-            </div>
+                <input type="checkbox" name="dialog_state" id="dialog_state" class="dialog_state">
+                <div id='dialog'>
+                <label id="dlg-back" for="dialog_state"></label>
+                <div id='dlg-wrap'>
+                    <label id="dlg-close" for="dialog_state"><i class="fa-sharp fa-solid fa-circle-xmark"></i></label>
+                    <h2 id='dlg-header'>Are you sure?</h2>
+                    <div id='dlg-content'>4444444444444444444444444444</div>
+                    <div id='dlg-prompt'>
+                    <div class='button positive'><i class="icon ion-ios-checkmark-empty"></i> Yes, let's do it!</div>
+                    <div class='button'><i class="icon ion-ios-close-empty"></i> No, I'll reconsider</div>
+                    </div>
+                </div>
+                </div>
+                <main id='main' class='main_area'>
+                <div class='center'>
+                    <label class="button mt-4" for="dialog_state"><i class="icon ion-ios-upload-outline
+                    "></i> Reserve Now</label>
+                </div>
+                <div id='console'></div>
+    
         </section>
 
         <section class="card ">
@@ -171,15 +215,26 @@
                 <P>type  : livre</P>
                 <P>nombre de pages : 220 pages</P>
             </div>
-            <div class="btn">
-                <button class="buy-btn">Reserve Now</button>
-                <button class="fav">
-                    <svg class="svg" id="i-star" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" stroke="#000"
-                        stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-                        <path d="M16 2 L20 12 30 12 22 19 25 30 16 23 7 30 10 19 2 12 12 12 Z" />
-                    </svg>
-                </button>
-            </div>
+                <input type="checkbox" name="dialog_state" id="dialog_state" class="dialog_state">
+                <div id='dialog'>
+                <label id="dlg-back" for="dialog_state"></label>
+                <div id='dlg-wrap'>
+                    <label id="dlg-close" for="dialog_state"><i class="fa-sharp fa-solid fa-circle-xmark"></i></label>
+                    <h2 id='dlg-header'>Are you sure?</h2>
+                    <div id='dlg-content'>55555555555555555555555555555</div>
+                    <div id='dlg-prompt'>
+                    <div class='button positive'><i class="icon ion-ios-checkmark-empty"></i> Yes, let's do it!</div>
+                    <div class='button'><i class="icon ion-ios-close-empty"></i> No, I'll reconsider</div>
+                    </div>
+                </div>
+                </div>
+                <main id='main' class='main_area'>
+                <div class='center'>
+                    <label class="button mt-4" for="dialog_state"><i class="icon ion-ios-upload-outline
+                    "></i> Reserve Now</label>
+                </div>
+                <div id='console'></div>
+    
         </section>
 
         <section class="card ">
@@ -194,15 +249,26 @@
                 <P>type  : livre</P>
                 <P>nombre de pages : 220 pages</P>
             </div>
-            <div class="btn">
-                <button class="buy-btn">Reserve Now</button>
-                <button class="fav">
-                    <svg class="svg" id="i-star" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" stroke="#000"
-                        stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-                        <path d="M16 2 L20 12 30 12 22 19 25 30 16 23 7 30 10 19 2 12 12 12 Z" />
-                    </svg>
-                </button>
-            </div>
+                <input type="checkbox" name="dialog_state" id="dialog_state" class="dialog_state">
+                <div id='dialog'>
+                <label id="dlg-back" for="dialog_state"></label>
+                <div id='dlg-wrap'>
+                    <label id="dlg-close" for="dialog_state"><i class="fa-sharp fa-solid fa-circle-xmark"></i></label>
+                    <h2 id='dlg-header'>Are you sure?</h2>
+                    <div id='dlg-content'>666666666666666666666666666</div>
+                    <div id='dlg-prompt'>
+                    <div class='button positive'><i class="icon ion-ios-checkmark-empty"></i> Yes, let's do it!</div>
+                    <div class='button'><i class="icon ion-ios-close-empty"></i> No, I'll reconsider</div>
+                    </div>
+                </div>
+                </div>
+                <main id='main' class='main_area'>
+                <div class='center'>
+                    <label class="button mt-4" for="dialog_state"><i class="icon ion-ios-upload-outline
+                    "></i> Reserve Now</label>
+                </div>
+                <div id='console'></div>
+    
         </section>
 
         <section class="card ">
@@ -217,15 +283,26 @@
                 <P>type  : livre</P>
                 <P>nombre de pages : 220 pages</P>
             </div>
-            <div class="btn">
-                <button class="buy-btn">Reserve Now</button>
-                <button class="fav">
-                    <svg class="svg" id="i-star" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" stroke="#000"
-                        stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-                        <path d="M16 2 L20 12 30 12 22 19 25 30 16 23 7 30 10 19 2 12 12 12 Z" />
-                    </svg>
-                </button>
-            </div>
+                <input type="checkbox" name="dialog_state" id="dialog_state" class="dialog_state">
+                <div id='dialog'>
+                <label id="dlg-back" for="dialog_state"></label>
+                <div id='dlg-wrap'>
+                    <label id="dlg-close" for="dialog_state"><i class="fa-sharp fa-solid fa-circle-xmark"></i></label>
+                    <h2 id='dlg-header'>Are you sure?</h2>
+                    <div id='dlg-content'>777777777777777777777777777777777777777</div>
+                    <div id='dlg-prompt'>
+                    <div class='button positive'><i class="icon ion-ios-checkmark-empty"></i> Yes, let's do it!</div>
+                    <div class='button'><i class="icon ion-ios-close-empty"></i> No, I'll reconsider</div>
+                    </div>
+                </div>
+                </div>
+                <main id='main' class='main_area'>
+                <div class='center'>
+                    <label class="button mt-4" for="dialog_state"><i class="icon ion-ios-upload-outline
+                    "></i> Reserve Now</label>
+                </div>
+                <div id='console'></div>
+    
         </section>
 
         <section class="card ">
@@ -240,16 +317,31 @@
                 <P>type  : livre</P>
                 <P>nombre de pages : 220 pages</P>
             </div>
-            <div class="btn">
-                <button class="buy-btn">Reserve Now</button>
-                <button class="fav">
-                    <svg class="svg" id="i-star" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" stroke="#000"
-                        stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-                        <path d="M16 2 L20 12 30 12 22 19 25 30 16 23 7 30 10 19 2 12 12 12 Z" />
-                    </svg>
-                </button>
-            </div>
+                <input type="checkbox" name="dialog_state" id="dialog_state" class="dialog_state">
+                <div id='dialog'>
+                <label id="dlg-back" for="dialog_state"></label>
+                <div id='dlg-wrap'>
+                    <label id="dlg-close" for="dialog_state"><i class="fa-sharp fa-solid fa-circle-xmark"></i></label>
+                    <h2 id='dlg-header'>Are you sure?</h2>
+                    <div id='dlg-content'>888888888888888888888888888888888888888</div>
+                    <div id='dlg-prompt'>
+                    <div class='button positive'><i class="icon ion-ios-checkmark-empty"></i> Yes, let's do it!</div>
+                    <div class='button'><i class="icon ion-ios-close-empty"></i> No, I'll reconsider</div>
+                    </div>
+                </div>
+                </div>
+                <main id='main' class='main_area'>
+                <div class='center'>
+                    <label class="button mt-4" for="dialog_state"><i class="icon ion-ios-upload-outline
+                    "></i> Reserve Now</label>
+                </div>
+                <div id='console'></div>
+    
         </section>
+
+
+        
+    </main>
 
 </main>
 <!-- pagination -->
@@ -308,5 +400,6 @@
             </div>
         </footer>
     </div>
+    <script src="reserve.js"></script>
 </body>
 </html>

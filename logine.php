@@ -96,8 +96,6 @@
         </footer>
 
     </div>
-
-    <script src="logine.js"></script>
 </body>
 
 </html>
