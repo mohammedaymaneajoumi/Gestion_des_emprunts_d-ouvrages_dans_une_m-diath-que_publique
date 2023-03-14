@@ -1,0 +1,187 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    /*===== GOOGLE FONTS =====*/
+    @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
+    /*===== VARIABLES CSS =====*/
+    :root {
+        --dark-color-lighten: #393053;
+        --red-card: #a62121;
+        --btn: #141414;
+        --btn-hover: #3a3a3a;
+        --text: #fbf7f7;
+    }
+
+    /*===== RESET =====*/
+    *,
+    ::before,
+    ::after {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        height: 100vh;
+        width: 100vw;
+        background-color: var(--dark-color-lighten);
+        font-family: "Montserrat", sans-serif;
+    }
+
+    button {
+        font-family: "Montserrat", sans-serif;
+        display: inline-block;
+        border: none;
+        outline: none;
+        border-radius: 0.2rem;
+        color: var(--text);
+        cursor: pointer;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    img {
+        max-width: 100%;
+        height: 100%;
+        user-select: none;
+    }
+
+    /*===== CARD =====*/
+    .container {
+        padding-right: 0 !important;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .card {
+        position: relative;
+        padding: 1rem;
+        width: 283px;
+        box-shadow: -1px 15px 30px -12px rgb(32, 32, 32);
+        border-radius: 0.9rem;
+        background-color: var(--red-card);
+        color: var(--text);
+        cursor: pointer;
+
+    }
+
+
+    .product-image {
+        height: 230px;
+        width: 100%;
+        filter: drop-shadow(5px 10px 15px rgba(8, 9, 13, 0.4));
+    }
+
+    .product-info {
+        text-align: center;
+    }
+
+    /* .card:hover .product-image {
+    transform: translate(-1.5rem, -7rem) rotate(-20deg);
+    } */
+
+    .product-info h2 {
+        font-size: 1.4rem;
+    }
+
+    .product-info p {
+        margin: 0.4rem;
+    }
+
+    .price {
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
+
+    .btn {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-top: 0.8rem;
+        margin-bottom: 0;
+    }
+
+    .buy-btn {
+        background-color: var(--btn);
+        padding: 0.6rem 3.5rem;
+        font-weight: 600;
+        font-size: 1rem;
+        transition: 300ms ease;
+    }
+
+    .buy-btn:hover {
+        background-color: var(--btn-hover);
+    }
+
+    .fav {
+        box-sizing: border-box;
+        background: #fff;
+        padding: 0.4rem 0.4rem;
+        border: 1px solid#000;
+        display: grid;
+        place-items: center;
+    }
+
+    .svg {
+        height: 25px;
+        width: 25px;
+        fill: #fff;
+        transition: all 500ms ease;
+    }
+
+    .fav:hover .svg {
+        fill: #000;
+    }
+
+    @media screen and (max-width: 800px) {
+        body {
+            height: auto;
+        }
+
+        .container {
+            padding: 2rem 0;
+            width: 100%;
+            flex-direction: column;
+            gap: 3rem;
+        }
+    }
+
+    .card {
+        vertical-align: top;
+        margin-top: 79px;
+        text-align: center;
+    }
+
+    .card .product-image {
+        height: 200px;
+        margin-bottom: 10px;
+    }
+
+
+    .card .price {
+        margin-bottom: 10px;
+    }
+
+    .card .buy-btn {
+        border: none;
+        color: #fff;
+        cursor: pointer;
+        margin-right: 5px;
+    }
+
+    .card .fav {
+        background-color: #f8f8f8;
+        border: none;
+        cursor: pointer;
+    }
