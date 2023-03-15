@@ -31,7 +31,7 @@
 
                     <div class="heading">
                         <h2>SACRED KNOWLEDGE</h2>
-                        <p class="text-danger">For An Enlightened Society</p>
+                        <p style="color: #646365">For An Enlightened Society</p>
                     </div>
 
                     <div class="success-msg">
@@ -46,7 +46,7 @@
 
                     <!-- Login Form -->
                     <div class="login form-peice switched">
-                        <form class="login-form" action="#" method="post">
+                        <form action="welcomeB.php" method="post">
                             <div class="form-group">
                                 <label for="loginemail">Email Adderss</label>
                                 <input type="email" name="member_email" id="loginemail" required>
@@ -94,8 +94,7 @@
                 made by: <a href="http://mohmdhasan.tk" class="text-danger" target="_blank">aymaneelajoumi</a>
             </p>
         </footer>
-
     </div>
+    <script src="logine.js"></script>
 </body>
-
 </html>

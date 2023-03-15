@@ -4,16 +4,15 @@
         box-sizing: border-box;
     }
 
-    /*===== GOOGLE FONTS =====*/
-    @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+    @import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&family=Varela+Round&display=swap");
+
 
     /*===== VARIABLES CSS =====*/
     :root {
         --dark-color-lighten: #393053;
-        --red-card: #a62121;
         --btn: #141414;
         --btn-hover: #3a3a3a;
-        --text: #fbf7f7;
+        --text: #141414;
     }
 
     /*===== RESET =====*/
@@ -30,13 +29,13 @@
         padding: 0;
         box-sizing: border-box;
         height: 100vh;
-        width: 100vw;
+        /* width: 100vw; */
         background-color: var(--dark-color-lighten);
-        font-family: "Montserrat", sans-serif;
+        font-family: "Tajawal", Arial;
     }
 
     button {
-        font-family: "Montserrat", sans-serif;
+        font-family: "Tajawal", Arial;
         display: inline-block;
         border: none;
         outline: none;
@@ -70,8 +69,7 @@
         width: 283px;
         box-shadow: -1px 15px 30px -12px rgb(32, 32, 32);
         border-radius: 0.9rem;
-        background-color: var(--red-card);
-        color: var(--text);
+        background-color: #bbbbbb;
         cursor: pointer;
 
     }

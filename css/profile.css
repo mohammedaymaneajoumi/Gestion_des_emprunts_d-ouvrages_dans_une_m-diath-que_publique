@@ -4,7 +4,7 @@
 }
 
 body {
-    background-color: #393053
+    background-color: #393053 !important;
 }
 
 .card {
@@ -27,6 +27,10 @@ body {
     height: 140px;
     width: 140px;
     border-radius: 50%
+}
+
+.btn-secondary {
+    --bs-btn-hover-bg: none;
 }
 
 .name {
@@ -89,3 +93,4 @@ hr .new1 {
 .btn-secondary {
     --bs-btn-bg: #fff !important;
 }
+

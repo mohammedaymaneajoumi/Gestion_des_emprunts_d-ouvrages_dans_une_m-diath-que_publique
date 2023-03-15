@@ -27,7 +27,7 @@
 .search-box .search-btn {
     position: absolute;
     right: 2px;
-    top: -10px;
+    top: 2px;
     color: #aaa;
 
     -webkit-transition: all 200ms ease-in-out;
@@ -37,4 +37,8 @@
 .search-box .search-btn:hover {
     color: #fff;
     background-color: #8FBE00;
+}
+.btn {
+    --bs-btn-padding-x: 8px !important;
+    --bs-btn-padding-y: 2px !important;
 }

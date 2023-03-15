@@ -13,7 +13,7 @@
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="css/card.css">
-    <link rel="stylesheet" href="css/footers.css">
+    <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/pagination.css">
     <link rel="stylesheet" href="css/search.css">
     <link rel="stylesheet" href="css/reserve.css">
@@ -32,6 +32,12 @@
                 <path fill="currentcolor" d="M22.766,0.001C10.194,0.001,0,10.193,0,22.766s10.193,22.765,22.766,22.765c12.574,0,22.766-10.192,22.766-22.765   S35.34,0.001,22.766,0.001z M22.766,6.808c4.16,0,7.531,3.372,7.531,7.53c0,4.159-3.371,7.53-7.531,7.53   c-4.158,0-7.529-3.371-7.529-7.53C15.237,10.18,18.608,6.808,22.766,6.808z M22.761,39.579c-4.149,0-7.949-1.511-10.88-4.012   c-0.714-0.609-1.126-1.502-1.126-2.439c0-4.217,3.413-7.592,7.631-7.592h8.762c4.219,0,7.619,3.375,7.619,7.592   c0,0.938-0.41,1.829-1.125,2.438C30.712,38.068,26.911,39.579,22.761,39.579z"></path>
             </svg>
             </article>
+            <!-- 
+                log out button 
+                <span class="m-3" style="font-size: 2.1em;">
+                    <i class="fa-solid fa-arrow-right-from-bracket" ></i>
+                </span> 
+            -->
         </div>
         <script>
             var profileIcon = document.getElementById("profile-icon");
@@ -58,7 +64,7 @@
                 <div class='search-box'>
                     <form class='search-form'>
                     <input class='form-control' placeholder='ex: livre, roman, DVD, mémoire de recherche, magazine, etc.' type='text'>
-                    <button class='btn btn-link search-btn'>
+                    <button class='btn search-btn'>
                         <i class="fa-solid fa-magnifying-glass"></i>
                     </button>
                     </form>
@@ -132,7 +138,6 @@
                     "></i> Reserve Now</label>
                 </div>
                 <div id='console'></div>
-    
         </section>
 
         <section class="card ">
@@ -166,7 +171,6 @@
                     "></i> Reserve Now</label>
                 </div>
                 <div id='console'></div>
-    
         </section>
 
         <section class="card ">
@@ -200,7 +204,6 @@
                     "></i> Reserve Now</label>
                 </div>
                 <div id='console'></div>
-    
         </section>
 
         <section class="card ">
@@ -234,7 +237,6 @@
                     "></i> Reserve Now</label>
                 </div>
                 <div id='console'></div>
-    
         </section>
 
         <section class="card ">
@@ -268,7 +270,6 @@
                     "></i> Reserve Now</label>
                 </div>
                 <div id='console'></div>
-    
         </section>
 
         <section class="card ">
@@ -302,7 +303,6 @@
                     "></i> Reserve Now</label>
                 </div>
                 <div id='console'></div>
-    
         </section>
 
         <section class="card ">
@@ -336,9 +336,139 @@
                     "></i> Reserve Now</label>
                 </div>
                 <div id='console'></div>
-    
         </section>
 
+        <section class="card ">
+            <div class="product-image">
+                <img src="img/poster1.jpg" alt="OFF-white Red Edition" draggable="false" />
+            </div>
+            <div class="product-info">
+                <h2>Company of One</h2>
+                <p>Auteur : Paul Jarvis</p>
+                <P>Date de publication : 15 janvier 2019</P>
+                <P>état : Neuf</P>
+                <P>type  : livre</P>
+                <P>nombre de pages : 220 pages</P>
+            </div>
+                <input type="checkbox" name="dialog_state" id="dialog_state" class="dialog_state">
+                <div id='dialog'>
+                <label id="dlg-back" for="dialog_state"></label>
+                <div id='dlg-wrap'>
+                    <label id="dlg-close" for="dialog_state"><i class="fa-sharp fa-solid fa-circle-xmark"></i></label>
+                    <h2 id='dlg-header'>Are you sure?</h2>
+                    <div id='dlg-content'>888888888888888888888888888888888888888</div>
+                    <div id='dlg-prompt'>
+                    <div class='button positive'><i class="icon ion-ios-checkmark-empty"></i> Yes, let's do it!</div>
+                    <div class='button'><i class="icon ion-ios-close-empty"></i> No, I'll reconsider</div>
+                    </div>
+                </div>
+                </div>
+                <main id='main' class='main_area'>
+                <div class='center'>
+                    <label class="button mt-4" for="dialog_state"><i class="icon ion-ios-upload-outline
+                    "></i> Reserve Now</label>
+                </div>
+                <div id='console'></div>
+        </section>
+
+        <section class="card ">
+            <div class="product-image">
+                <img src="img/poster1.jpg" alt="OFF-white Red Edition" draggable="false" />
+            </div>
+            <div class="product-info">
+                <h2>Company of One</h2>
+                <p>Auteur : Paul Jarvis</p>
+                <P>Date de publication : 15 janvier 2019</P>
+                <P>état : Neuf</P>
+                <P>type  : livre</P>
+                <P>nombre de pages : 220 pages</P>
+            </div>
+                <input type="checkbox" name="dialog_state" id="dialog_state" class="dialog_state">
+                <div id='dialog'>
+                <label id="dlg-back" for="dialog_state"></label>
+                <div id='dlg-wrap'>
+                    <label id="dlg-close" for="dialog_state"><i class="fa-sharp fa-solid fa-circle-xmark"></i></label>
+                    <h2 id='dlg-header'>Are you sure?</h2>
+                    <div id='dlg-content'>888888888888888888888888888888888888888</div>
+                    <div id='dlg-prompt'>
+                    <div class='button positive'><i class="icon ion-ios-checkmark-empty"></i> Yes, let's do it!</div>
+                    <div class='button'><i class="icon ion-ios-close-empty"></i> No, I'll reconsider</div>
+                    </div>
+                </div>
+                </div>
+                <main id='main' class='main_area'>
+                <div class='center'>
+                    <label class="button mt-4" for="dialog_state"><i class="icon ion-ios-upload-outline
+                    "></i> Reserve Now</label>
+                </div>
+                <div id='console'></div>
+        </section>
+
+        <section class="card ">
+            <div class="product-image">
+                <img src="img/poster1.jpg" alt="OFF-white Red Edition" draggable="false" />
+            </div>
+            <div class="product-info">
+                <h2>Company of One</h2>
+                <p>Auteur : Paul Jarvis</p>
+                <P>Date de publication : 15 janvier 2019</P>
+                <P>état : Neuf</P>
+                <P>type  : livre</P>
+                <P>nombre de pages : 220 pages</P>
+            </div>
+                <input type="checkbox" name="dialog_state" id="dialog_state" class="dialog_state">
+                <div id='dialog'>
+                <label id="dlg-back" for="dialog_state"></label>
+                <div id='dlg-wrap'>
+                    <label id="dlg-close" for="dialog_state"><i class="fa-sharp fa-solid fa-circle-xmark"></i></label>
+                    <h2 id='dlg-header'>Are you sure?</h2>
+                    <div id='dlg-content'>888888888888888888888888888888888888888</div>
+                    <div id='dlg-prompt'>
+                    <div class='button positive'><i class="icon ion-ios-checkmark-empty"></i> Yes, let's do it!</div>
+                    <div class='button'><i class="icon ion-ios-close-empty"></i> No, I'll reconsider</div>
+                    </div>
+                </div>
+                </div>
+                <main id='main' class='main_area'>
+                <div class='center'>
+                    <label class="button mt-4" for="dialog_state"><i class="icon ion-ios-upload-outline
+                    "></i> Reserve Now</label>
+                </div>
+                <div id='console'></div>
+        </section>
+
+        <section class="card ">
+            <div class="product-image">
+                <img src="img/poster1.jpg" alt="OFF-white Red Edition" draggable="false" />
+            </div>
+            <div class="product-info">
+                <h2>Company of One</h2>
+                <p>Auteur : Paul Jarvis</p>
+                <P>Date de publication : 15 janvier 2019</P>
+                <P>état : Neuf</P>
+                <P>type  : livre</P>
+                <P>nombre de pages : 220 pages</P>
+            </div>
+                <input type="checkbox" name="dialog_state" id="dialog_state" class="dialog_state">
+                <div id='dialog'>
+                <label id="dlg-back" for="dialog_state"></label>
+                <div id='dlg-wrap'>
+                    <label id="dlg-close" for="dialog_state"><i class="fa-sharp fa-solid fa-circle-xmark"></i></label>
+                    <h2 id='dlg-header'>Are you sure?</h2>
+                    <div id='dlg-content'>888888888888888888888888888888888888888</div>
+                    <div id='dlg-prompt'>
+                    <div class='button positive'><i class="icon ion-ios-checkmark-empty"></i> Yes, let's do it!</div>
+                    <div class='button'><i class="icon ion-ios-close-empty"></i> No, I'll reconsider</div>
+                    </div>
+                </div>
+                </div>
+                <main id='main' class='main_area'>
+                <div class='center'>
+                    <label class="button mt-4" for="dialog_state"><i class="icon ion-ios-upload-outline
+                    "></i> Reserve Now</label>
+                </div>
+                <div id='console'></div>
+        </section>
 
         
     </main>
@@ -377,9 +507,10 @@
                     <div class="col-sm-6 col-md-3 item">
                         <h3>Services</h3>
                         <ul>
+                            <li><a href="#">novels</a></li>
                             <li><a href="#">books</a></li>
-                            <li><a href="#"></a></li>
-                            <li><a href="#">Hosting</a></li>
+                            <li><a href="#">DVDs</a></li>
+                            <li><a href="#">magazines</a></li>
                         </ul>
                     </div>
                     <div class="col-sm-6 col-md-3 item">
@@ -400,6 +531,6 @@
             </div>
         </footer>
     </div>
-    <script src="reserve.js"></script>
+    <script src="js/reserve.js"></script>
 </body>
 </html>

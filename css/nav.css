@@ -17,7 +17,7 @@
     body {
         margin: 0;
         padding: 0;
-        background-color: #EEE;
+        /* background-color: #EEE; */
         font-family: "Open Sans", sans-serif;
         box-sizing: border-box;
         cursor: default;
@@ -132,4 +132,3 @@
     .form-control {
         width: 50% !important;
     }
-
