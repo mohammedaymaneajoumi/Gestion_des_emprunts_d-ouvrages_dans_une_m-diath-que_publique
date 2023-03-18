@@ -1,10 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&family=Varela+Round&display=swap");
+
+body {
+    font-family: "Tajawal", Arial;
+    background-color: #393053 !important;
+}
+
 * {
     margin: 0;
     padding: 0
-}
-
-body {
-    background-color: #393053 !important;
 }
 
 .card {
@@ -15,21 +18,8 @@ body {
     transition: all 0.5s;
 }
 
-/* .image img {
-    transition: all 0.5s
-}
 
-.card:hover .image img {
-    transform: scale(1.5)
-} */
-
-.btn {
-    height: 140px;
-    width: 140px;
-    border-radius: 50%
-}
-
-.btn-secondary {
+.btn-btn-dark {
     --bs-btn-hover-bg: none;
 }
 
@@ -93,4 +83,3 @@ hr .new1 {
 .btn-secondary {
     --bs-btn-bg: #fff !important;
 }
-

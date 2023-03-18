@@ -9,10 +9,13 @@
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <link rel="stylesheet" href="css/profile.css">
     <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/EditProfile.css">
     <script src="https://kit.fontawesome.com/1171a84c58.js" crossorigin="anonymous"></script>
     </head>
     <body>
@@ -36,42 +39,62 @@
         <div class="card p-4">
             <div
             class="image d-flex flex-column justify-content-center align-items-center">
-            <button class="btn btn-secondary">
+            <button class="btn btn-dark" style="height: 140px; width: 140px; border-radius: 50%">
                 <img
                 src="img/pngegg.png"
                 height="100"
                 width="100" />
             </button>
-            <span class="name mt-3">Eleanor Pena</span>
-            <span class="idd">@eleanorpena</span>
-            <div
-                class="d-flex flex-row justify-content-center align-items-center gap-2">
+            <span class="name" style="margin-top: 1rem !important;">aymane Elajoumi</span>
+            <span class="idd">@elajoumi6_</span>
+            <div class="d-flex flex-row justify-content-center align-items-center gap-2">
                 <span class="idd1">Oxc4c16a645_b21a</span>
                 <span><i class="fa fa-copy"></i></span>
             </div>
-            <div class="d-flex mt-2">
-                <button class="btn1 btn-outline-dark">Edit Profile</button>
+            <div class="d-flex">
+            <main role="main">
+                <button class="popup-trigger btn" id="popup-trigger"><span>Edit Profile</span></button>
+            </main>
             </div>
-            <div class="text mt-3">
-                <p>hiiiiiiiiiii</p>
-                <p>hiiiiiiiiiii</p>
-                <p>hiiiiiiiiiii</p>
-                <p>hiiiiiiiiiii</p>
+            <div class="text" style="margin-top: 5rem !important; color: #625e59;">
+                <p>Full name : Mohammed Aymane elajoumi</p>
+                <p>Phone number : +212 6 07 44 42 20</p>
+                <p>Adresse : ouama tangier , morocco</p>
+                <p>C.I.N : KB225112</p>
+                <P>Birthday : 28.08.2002</P>
+                <p>type : Etudiant</p>
             </div>
-            <!-- <div
-                class="gap-3 mt-3 icons d-flex flex-row justify-content-center align-items-center">
-                <span><i class="fa fa-twitter"></i></span>
-                <span><i class="fa fa-facebook-f"></i></span>
-                <span><i class="fa fa-instagram"></i></span>
-                <span><i class="fa fa-linkedin"></i></span>
-            </div> -->
             <div class="px-2 rounded mt-4 date">
                 <span class="join">Created at May,2021</span>
             </div>
             </div>
         </div>
         </div>
-    <!-- FOOOOTER -->
+    <!-- modal-->
+            <div class="overlay" id="overlay">
+            <div class="overlay-background" id="overlay-background"></div>
+            <div class="overlay-content" id="overlay-content">
+                <div class="fa fa-times fa-lg overlay-close" id="overlay-close"></div>
+                <h3 class="main-heading">Edit Profile</h3>
+                <h5 class="blurb">Please enter valid informations &mdash;</h5>
+                <form class="signup-form" method="post" action="#" novalidate="novalidate">
+                    <label for="">Full Name</label>
+                    <input id="" type="text" name="name" autocomplete="off"/>
+                    <label for="">Phone number</label>
+                    <input id="" type="number" name="email" autocomplete="off"/>
+                    <label for="">Adresse</label>
+                    <input id="" type="text" name="pw" autocomplete="off"/>
+                    <label for=""> C.I.N</label>
+                    <input id="" type="text" name="cpw" autocomplete="off"/>
+                    <label for="">Birthday</label>
+                    <input id="" type="text" name="cpw" autocomplete="off"/>
+                    <label for="">Type</label>
+                    <input id="s" type="text" name="cpw" autocomplete="off"/>
+                    <button class="btn btn-outline submit-btn"><span>submit</span></button>
+                </form>
+            </div>
+            </div>
+
     <!-- FOOOOTER -->
 <div class="footer-dark">
         <footer>
@@ -104,5 +127,6 @@
             </div>
         </footer>
     </div>
-    </body>
+    <script src="js/EditProfile.js"></script>
+</body>
 </html>

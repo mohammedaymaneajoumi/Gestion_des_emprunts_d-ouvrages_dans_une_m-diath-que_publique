@@ -15,9 +15,9 @@ a
     text-decoration: none;
 }
 .product-card {
-    width: 341px;
+    width: 307px;
     position: relative;
-    margin: 50px auto;
+    padding: 11px ;
     background: #393053;
 }
 
@@ -37,7 +37,6 @@ a
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 3px;
 }
 
 .product-tumb img {
@@ -46,7 +45,7 @@ a
 }
 
 .product-details {
-    padding: 30px;
+    padding: 10px 10px 0 10px;
 }
 
 .product-catagory {
@@ -63,13 +62,13 @@ a
     display: block;
     margin-bottom: 18px;
     text-transform: uppercase;
-    color: #363636;
+    color: #fff;
     text-decoration: none;
     transition: 0.3s;
 }
 
 .product-details h4 a:hover {
-    color: #fbb72c;
+    color: #d94a45;
 }
 
 .product-details p {
