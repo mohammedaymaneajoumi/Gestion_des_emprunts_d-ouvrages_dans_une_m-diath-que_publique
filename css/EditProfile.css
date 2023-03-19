@@ -53,6 +53,7 @@
     .btn {
         display: block;
         height: 37px;
+        width: 193px;
         border: 0;
         text-align: center;
         cursor: pointer;
@@ -94,7 +95,7 @@
     .popup-trigger {
         margin: auto;
         position: absolute;
-        top: -24px;
+        top: -63px;
         bottom: 0;
         left: 0;
         right: 0;
@@ -126,7 +127,7 @@
     .overlay .overlay-content {
         width: 100%;
         max-width: 530px;
-        margin: 100px auto 0;
+        margin: 74px auto 0;
         padding: 0 15px;
         color: #fff;
         position: relative;

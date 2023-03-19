@@ -103,49 +103,10 @@
                 <div>
                 <section style="margin-left: 45px;">
                     <div class="" style="">
-                        <h2> Welcome back :)</h2>
+                        <h2> all users ::</h2>
                     </div>
                 </section>
                 </div>
-
-                    <div>   
-                        <section>
-                            <div class="">
-                                <?php
-                                 // An array of data representing the card's content
-                                    $cards = [['image' => 'img/poster1.jpg','title' => 'Company of One','author' => 'Paul Jarvis','publication_date' => '15 janvier 2019','condition' => 'Neuf','type' => 'livre','pages' => '220 pages'],
-                                    // add more cards here...
-                                ];
-                                $counter = 0;
-                                foreach ($cards as $card) {
-                                ?>
-                                    <div style="margin: 50px 0 46px 95px;">
-                                        <div class="product-card">
-                                            <div class="product-tumb">
-                                                <img src="<?php echo $card['image']; ?>" alt="" style="width: 150px;">
-                                            </div>
-                                            <div class="product-details">
-                                                <span class="product-catagory"><?php echo $card['type']; ?></span>
-                                                <h4><a href=""><?php echo $card['title']; ?></a></h4>
-                                                <p>Auteur : <?php echo $card['author']; ?></p>
-                                                <p>Date de publication : <?php echo $card['publication_date']; ?></p>
-                                                <p>état : <?php echo $card['condition']; ?></p>
-                                                <p>nombre de pages : <?php echo $card['pages']; ?></p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                <?php
-                                    $counter++;
-                                    if ($counter % 3 == 0) {
-                                ?>
-                                        </div><div class="row">
-                                <?php
-                                    }
-                                }
-                                ?>
-                            </div>
-                        </section>
-                    </div>
 
             </div>
         </div>
@@ -153,6 +114,5 @@
     </div>
 </div>
 <script src="js/home.js"></script>
-
 </body>
 </html>

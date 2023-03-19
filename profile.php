@@ -58,6 +58,7 @@
             </div>
             <div class="text" style="margin-top: 5rem !important; color: #625e59;">
                 <p>Full name : Mohammed Aymane elajoumi</p>
+                <p>e-mail : mohammed.aymane@gmail.com</p>
                 <p>Phone number : +212 6 07 44 42 20</p>
                 <p>Adresse : ouama tangier , morocco</p>
                 <p>C.I.N : KB225112</p>
@@ -80,6 +81,8 @@
                 <form class="signup-form" method="post" action="#" novalidate="novalidate">
                     <label for="">Full Name</label>
                     <input id="" type="text" name="name" autocomplete="off"/>
+                    <label for="">e-mail address</label>
+                    <input id="" type="email" name="name" autocomplete="off"/>
                     <label for="">Phone number</label>
                     <input id="" type="number" name="email" autocomplete="off"/>
                     <label for="">Adresse</label>
